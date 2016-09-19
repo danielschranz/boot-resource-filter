@@ -1,6 +1,6 @@
-[![License](//img.shields.io/badge/license-LGPL_v3-brightgreen.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html#content)
-[![Boot](//img.shields.io/badge/boot-2.6.0-ECC42F.svg?style=flat)](http://boot-clj.com/)
-[![Clojars](//img.shields.io/badge/clojars-0.1.0-blue.svg?style=flat)](https://clojars.org/....)
+[![License: LGPL v3](https://img.shields.io/badge/license-LGPL_v3-brightgreen.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html#content)
+[![Boot](https://img.shields.io/badge/boot-2.6.0-ECC42F.svg?style=flat)](http://boot-clj.com/)
+[![Clojars](https://img.shields.io/badge/clojars-0.1.0-blue.svg?style=flat)](https://clojars.org/....)
 
 boot-resource-filter
 ==========
