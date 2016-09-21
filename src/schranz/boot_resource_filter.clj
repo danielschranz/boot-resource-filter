@@ -1,3 +1,5 @@
+;; Copyright 2016 Daniel Schranz. Distributed under the LGPL v3.
+
 (ns schranz.boot-resource-filter
   {:boot/export-tasks true}
   (:require [boot
@@ -20,7 +22,7 @@
     (spit out-file (str (slurp file) "EDITED!!!!!"))))
 
 (core/deftask filter-resources
-  "Replace tokens in files"
+  "Filter resource files and replace tokens with system properties or strings."
   [m matching REGEX #{regex} "Set of regular expressions to select files for filtering."
    r replacements MATCH=RESULT #{[edn str]} "A map to specify which tokens to replace with which string. The files will be searched for tokens in the following formats: {{token}} . TODO allow for ${token} or @token@. TODO allow for regexps as generic string matchers."]
 

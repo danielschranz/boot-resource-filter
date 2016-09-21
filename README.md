@@ -2,11 +2,12 @@
 [![Boot](https://img.shields.io/badge/boot-2.6.0-ECC42F.svg?style=flat)](http://boot-clj.com/)
 [![Clojars](https://img.shields.io/badge/clojars-0.1.0-blue.svg?style=flat)](https://clojars.org/....)
 
-boot-resource-filter
+boot-resource-filter (WIP)
 ==========
 `[schranz/boot-resource-filter "0.1.0"]` (not yet)
 
-A Boot task allowing you to replace tokens in resource files.
+A Boot task allowing you to replace tokens in resource files. 
+**Note:** this task is a work in progress and doesn't work yet.
 
 ### How to test and build
 
