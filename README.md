@@ -7,7 +7,8 @@ boot-resource-filter (WIP)
 `[schranz/boot-resource-filter "0.1.0"]` (not yet)
 
 A Boot task allowing you to replace tokens in resource files. 
-**Note:** this task is a work in progress and doesn't work yet.
+
+**TODO:** add proper documentation here
 
 ### How to test and build
 
@@ -15,17 +16,18 @@ A Boot task allowing you to replace tokens in resource files.
 
 ### Example usages
 It is possible to run this task from the command line:
-- `boot filter-resources -m ".*\.edn" -r ':test'=test -r '#"dummy"=something'`
+- `boot filter-resources -m ".*\.edn" -r user=mike -r password=secret'`
 
 but most likely you will want to run it from within a `build.boot`
-* **TODO** example here
+* **TODO** add example here
 
 ### Available options
 ```
 Options:
   -h, --help                       Print this help info.
-  -m, --matching REGEX             Conj REGEX onto set of regular expressions to select files for filtering.
-  -r, --replacements MATCH=RESULT  Conj [MATCH RESULT] onto a map to specify which tokens to replace with which string. The files will be searched for tokens in the following formats: {{token}} . TODO allow for ${token} or @token@. TODO allow for regexps as generic string matchers.
+  -f, --files REGEX                Conj REGEX onto the set of regular expressions to select files for filtering.
+  -n, --no-properties              Do not use system properties to replace tokens.
+  -r, --replacements MATCH=RESULT  Conj [MATCH RESULT] onto the replacements map. You can overwrite system properties by adding entries here.
  ```
 
 ### License
