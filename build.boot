@@ -5,7 +5,7 @@
 
  :resource-paths #{"src" "test-resources"}) ;; TODO stop test-resources from ending up in jar file (only include for test-task)
 
-(def version "0.1.0")
+(def version "0.1.0-SNAPSHOT")
 
 (require '[metosin.boot-alt-test :refer [alt-test]]
          '[adzerk.bootlaces :refer :all]
