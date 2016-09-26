@@ -1,5 +1,6 @@
 (set-env!
  :dependencies '[[org.clojure/clojure "1.7.0"]
+                 [adzerk/bootlaces "0.1.13" :scope "test"]
                  [metosin/boot-alt-test "0.1.2" :scope "test"]]
 
  :resource-paths #{"src" "test-resources"}) ;; TODO stop test-resources from ending up in jar file (only include for test-task)
@@ -7,7 +8,10 @@
 (def version "0.1.0")
 
 (require '[metosin.boot-alt-test :refer [alt-test]]
+         '[adzerk.bootlaces :refer :all]
          '[schranz.boot-resource-filter :refer [filter-resources]])
+
+(bootlaces! version)
 
 (task-options!
   pom {:project     'schranz/boot-resource-filter
